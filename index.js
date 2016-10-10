@@ -17,7 +17,7 @@ const _ = require('underscore'),
     function favicons (source, parameters, next) {
 
         const config = clone(configDefaults),
-            options = _.mergeDefaults(parameters || {}, config.defaults),
+            options = _.mergeDefaults(parameters || config.defaults),
             µ = helpers(options),
             background = µ.General.background(options.background);
 
