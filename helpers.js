@@ -190,7 +190,7 @@ const path = require('path'),
                     print('Files:create', `Creating file: ${ name }`);
                     if (name === 'manifest.json') {
                         properties.name = options.appName;
-                        properties.short_name = options.appName;
+                        properties.short_name = options.appShortName;
                         properties.description = options.appDescription;
                         properties.dir = options.dir;
                         properties.lang = options.lang;
